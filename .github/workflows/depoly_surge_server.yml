@@ -33,7 +33,7 @@ jobs:
         run: npm install -g surge
         
       - name: Run Surge
-        run : surge ./mkashif.surge.h --token  ${{secrets.SURGE_TOKEN}}
+        run : surge ./ mkashif.surge.h --token  ${{secrets.SURGE_TOKEN}}
         
         
 
