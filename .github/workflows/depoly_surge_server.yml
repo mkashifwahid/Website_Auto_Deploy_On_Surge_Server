@@ -24,8 +24,10 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
+      - name: Uninstall NodJs
+        run:  npm uninstall surge -g
+
       - name: Install NodeJs
-        run: npm uninstall surge -g
         uses: actions/setup-node@v2-beta
         with:
             node-version: 12
